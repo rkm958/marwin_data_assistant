@@ -1,0 +1,13 @@
+pandas
+openpyxl
+pymysql
+jupyterlab
+cryptography
+openai
+faiss-cpu
+tiktoken
+python-dotenv
+numpy
+streamlit
+uuid
+datetime

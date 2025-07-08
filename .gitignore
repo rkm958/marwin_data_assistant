@@ -1,0 +1,24 @@
+# .gitignore
+
+# Virtual environment
+__pycache__/
+.ipynb_checkpoints/
+.idea/
+.venv/
+
+# Sensitive files
+zzTest.py
+cwc_metadata.xlsx
+cwc_metadata_with_doc.xlsx
+vector_index_old.faiss
+main.py
+llm_answer.py
+app_old.py
+doc_builder.py
+get_metadata.py
+.env
+
+# ignore metadata folder
+get_metadata/
+archived/
+framework/
