@@ -7,7 +7,7 @@ This file handles two key tasks:
 These utilities power the semantic search experience in our metadata assistant.
 """
 
-import streamlit as stq
+import streamlit as st
 import os
 import numpy as np
 import openai
