@@ -7,6 +7,7 @@ This file handles two key tasks:
 These utilities power the semantic search experience in our metadata assistant.
 """
 
+import streamlit as stq
 import os
 import numpy as np
 import openai
@@ -15,7 +16,8 @@ from dotenv import load_dotenv
 # Load your OpenAI API key from environment variable
 load_dotenv()
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+#openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 model = "text-embedding-3-small"  # cheap & fast embedding model
 

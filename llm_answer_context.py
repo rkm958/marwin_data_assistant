@@ -7,6 +7,7 @@ get_llm_answer(query, df_metadata, index, memory=None)
     → Also returns the top 5 match records (with score) used for evaluation/logging.
 """
 
+import streamlit as st
 import os
 import openai
 from embedding_utils import embed
@@ -16,7 +17,8 @@ from dotenv import load_dotenv
 # Load your OpenAI API key from environment variable
 load_dotenv()
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+#openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 # Use gpt-4o-mini or gpt-4-turbo depending on cost/speed/accuracy tradeoff
 model = "gpt-4o-mini"
