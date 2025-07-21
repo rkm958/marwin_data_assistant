@@ -21,7 +21,7 @@ openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 model = "text-embedding-3-small"  # cheap & fast embedding model
 
-def embed(texts, batch_size=100):
+def embed(texts, batch_size=50):
     """
     Convert a list of text strings into vector embeddings using OpenAI API.
 

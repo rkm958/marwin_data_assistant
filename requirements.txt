@@ -11,3 +11,7 @@ numpy
 streamlit
 uuid
 datetime
+scikit-learn
+matplotlib
+seaborn
+plotly
