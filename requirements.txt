@@ -15,3 +15,5 @@ scikit-learn
 matplotlib
 seaborn
 plotly
+streamlit
+altair>=4,<5
